@@ -1,0 +1,2 @@
+# ornekler
+ba-sinif-ornekleri
