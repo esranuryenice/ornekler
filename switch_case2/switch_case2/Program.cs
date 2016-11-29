@@ -18,21 +18,22 @@ namespace switch_case2
             char islem = Convert.ToChar(Console.ReadLine());
             switch (islem)
             {
-                case ('+'):
+                case '+':
                     Console.Write("Sayilarin Toplami= "+" " + (sayi1 + sayi2));
                     break;
-                case ('-'):
+                case '-':
                     Console.Write("Sayilarin Cikartmasi=" + "  "  + (sayi1 - sayi2));
                     break;
-                case ('*'):
+                case '*':
                     Console.Write("Sayilarin Carpımı=" + " " + (sayi1 * sayi2));
                     break;
-                case ('/'):
+                case '/':
                     Console.Write("Sayilarin Bolümü=" + " " + (sayi1 / sayi2));
                     break;
                 default:
                     Console.WriteLine("\nYanlis Bir Secim Yaptınız \nLütfen Yeniden Secim Yapın\n");
                     goto bas;
+                    
 
             }
             Console.ReadKey();
