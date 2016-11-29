@@ -32,15 +32,29 @@ namespace While_Döngüsü
             //{
             //    toplam = toplam + sayac;
             //     sayac++;
-           
+
             //}
             //Console.WriteLine("sonuc=" + toplam);
 
             //Console.ReadKey();
             #endregion
 
+            #region girilen sayının faktöriyeli
 
-           
+            Console.WriteLine("Sayiyi Girin: ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+
+            int sayac = 1;
+            int fakto = 1;
+            while (sayac <= sayi)
+            {
+                fakto = fakto * sayac;
+                sayac++;
+            }
+            Console.WriteLine("sonuc2= " + fakto);
+            Console.ReadKey();
+            #endregion
 
 
 
