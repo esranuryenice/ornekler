@@ -10,7 +10,7 @@ namespace switch_case3
     {
         static void Main(string[] args)
         {
-            //
+            //5oıj
         }
     }
 }
