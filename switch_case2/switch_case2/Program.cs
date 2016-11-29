@@ -24,10 +24,10 @@ namespace switch_case2
                 case '-':
                     Console.Write("Sayilarin Cikartmasi=" + "  "  + (sayi1 - sayi2));
                     break;
-                case '*':
+                case ('*'):
                     Console.Write("Sayilarin Carpımı=" + " " + (sayi1 * sayi2));
                     break;
-                case '/':
+                case ('/'):
                     Console.Write("Sayilarin Bolümü=" + " " + (sayi1 / sayi2));
                     break;
                 default:
