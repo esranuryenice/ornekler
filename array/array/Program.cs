@@ -74,16 +74,88 @@ namespace array
             //Console.WriteLine("{0} tane Sifir var", sifir);
             //Console.ReadKey();
 
-            Console.WriteLine("Kaçıncı Gün");
-            int s1 = Convert.ToInt32(Console.ReadLine());
-            string[] gunler = new string[] { " ", "pazaretsi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
-            foreach (var gun in gunler)
-            {
-                switch (switch_on)
-                {
-                    default:
-                }
-            }
+            //Console.WriteLine("Kaçıncı Gün");
+            //int s1 = Convert.ToInt32(Console.ReadLine());
+            //string[] gunler = new string[] { " ", "pazaretsi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
+
+            //foreach (var gun in gunler)
+            //{
+            //    switch (s1)
+            //    {
+            //        case 1:
+            //            Console.WriteLine("pazartesi");
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("salı");
+            //            break;
+            //        case 3:
+            //            Console.WriteLine("çarşamba");
+            //            break;
+            //        case 4:
+            //            Console.WriteLine("perşembe");
+            //            break;
+            //        case 5:
+            //            Console.WriteLine("cuma");
+            //            break;
+            //        case 6:
+            //            Console.WriteLine("cumartesi");
+            //            break;
+            //        case 7:
+            //            Console.WriteLine("pazar");
+            //            break;
+            //        default:
+            //            Console.WriteLine("yanlış seçim yaptınız!");
+            //            break;
+            //    }
+            //}
+            //Console.ReadLine();
+            //Console.ReadKey();
+            //bas:
+            //Console.Write("Kaçıncı Gün ? = ");
+            //int secim = Convert.ToInt32(Console.ReadLine());
+            //string [] gunler=new string[] {" ","pazaretsi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
+            //for (int i = 7; i <gunler.Length; i++)
+            //{
+            //    if (secim==1)
+            //    {
+            //        Console.WriteLine("pazartesi");
+            //    }
+            //    else if (secim==2)
+            //    {
+            //        Console.WriteLine("salı");
+            //    }
+            //    else if (secim == 3)
+            //    {
+            //        Console.WriteLine("Çarşamba");
+            //    }
+            //    else if (secim == 4)
+            //    {
+            //        Console.WriteLine("Perşembe");
+            //    }
+            //    else if (secim == 5)
+            //    {
+            //        Console.WriteLine("cuma");
+            //    }
+            //    else if (secim == 6)
+            //    {
+            //        Console.WriteLine("cumartesi");
+            //    }
+            //    else if(secim==7)
+            //    {
+            //        Console.WriteLine("pazar");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Yanlış Seçim Yaptınız !!!!");
+            //        goto bas;
+            //    }
+               
+            //}
+            //Console.ReadLine();
+            //Console.ReadKey();
+
+
+
 
 
 
