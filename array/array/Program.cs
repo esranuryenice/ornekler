@@ -149,12 +149,39 @@ namespace array
             //        Console.WriteLine("Yanlış Seçim Yaptınız !!!!");
             //        goto bas;
             //    }
-               
+
             //}
             //Console.ReadLine();
             //Console.ReadKey();
+            string[] gunler = new string[] { "pazaretsi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
+            bool devam = true;
+            while (devam)
+            {
+                Console.Write("Kaçıncı Gün :");
+                byte gun = Convert.ToByte(Console.ReadLine());
+                if (gun <= 7 && gun >= 1)
+                {
+                    Console.WriteLine(gunler[gun - 1]);
+                }
+                else
+                {
+                    Console.WriteLine("{0}.gün yok ama bir isim bul ekliyelim :)", gun);
+                }
+                Console.WriteLine("\nDevam etmek istiyorsan \"e\" tuşuna bas");
+                char c = Convert.ToChar(Console.ReadLine());
+                if (c == 'e')
+                {
+                    devam = true;
+                    Console.Clear();
+                }
+                else
+                {
+                    devam = false;
+                }
 
-            //
+
+            }
+            Console.ReadKey();
 
 
 
