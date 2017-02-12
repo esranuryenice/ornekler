@@ -24,20 +24,62 @@ namespace StockTakibiForms
         private void Form1_Load(object sender, EventArgs e)
             
         {
-            //using (StokTakibiDBContext context = new StokTakibiDBContext())
+            using (StokTakibiDBContext context = new StokTakibiDBContext())
+            {
+                var resultCategory = context.Category.ToList();
+                foreach (var item in resultCategory)
+                {
+                    comboBoxurun_kategori.Items.Add(item);
+                }
 
-            //{
-            //    context.Category.Add(new Category { Ad = "Kahve" });
+                // comboBoxurun_kategori.DataSource = context.Category.ToList();
 
-            //    context.Category.Add(new Category { Ad = "Çay" });
+               var  resultPAT = context.ProductAmountType.ToList();
+                comboBoxurun_miktar_türü.DataSource = resultPAT;
+            }
 
-            //    Category c = new Category();
-            //    c.Ad = "Soğuk İçecek";
-            //    context.Category.Add(c);
+            tabControlmenu.Visible = false;
+            pictureBox2.Visible = false;
+
+        }
+
+        private async void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+           
+            pictureBox1.Visible = false;
+            label1.Visible = false;
+
+            pictureBox2.Visible = true;
+            await Task.Delay(2500);
+
+            pictureBox2.Visible = false;
+            tabControlmenu.Visible = true;
+        }
+
+        private void buttonekle_Click(object sender, EventArgs e)
+        {
+            Product p = new Product();
+            p.UrunBarkod = textBoxbarkod.Text;
+            p.UrunAdi = textBoxurun_adi.Text;
+            p.UrunMiktar = Convert.ToDouble(numericUpDownurun_miktar.Value);
+            p.KDVOran = int.Parse(comboBoxKDV.SelectedItem.ToString());
+            p.StockAdeti = Convert.ToInt32(numericUpDowstok_adeti.Value);
+
+            Category c =(Category) comboBoxurun_kategori.SelectedItem;
+            p.KategoriID = c.ID;
+
+           
+            ProductAmountType pat = (ProductAmountType)comboBoxurun_miktar_türü.SelectedItem;
+            p.UrunMiktarTuruID = pat.ID;
+            using (StokTakibiDBContext context = new StokTakibiDBContext())
+            {
+                context.Product.Add(p);
+                context.SaveChanges();
+            }
 
 
-            //    context.SaveChanges();
-            //}
+
         }
     }
 }
